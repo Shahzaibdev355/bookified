@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 // import { Show, SignedIn, SignedOut, SignInButton, SignUpButton, UserButton } from "@clerk/nextjs";
-import { Show, SignInButton, SignUpButton, UserButton } from "@clerk/nextjs";
+import { Show, SignInButton, SignUpButton, UserButton, useUser } from "@clerk/nextjs";
 
 
 const navItems = [
@@ -15,6 +15,7 @@ const navItems = [
 const Navbar = () => {
 
     const pathName = usePathname();
+    const { user } = useUser()
 
     return (
         <header className="w-full fixed z-50 bg-[var(--bg-primary)] border-b border-[var(--border-subtle)]">
@@ -53,14 +54,27 @@ const Navbar = () => {
                     <UserButton/>
                 </SignedIn> */}
 
-                    <Show when="signed-out">
-                        <SignInButton mode="modal" />
-                        {/* <SignUpButton mode="modal" /> */}
-                    </Show>
+                    <div className="flex gap-7.5 items-center">
+                        <Show when="signed-out">
+                            <SignInButton mode="modal" />
+                            {/* <SignUpButton mode="modal" /> */}
+                        </Show>
 
-                    <Show when="signed-in">
-                        <UserButton />
-                    </Show>
+                        <Show when="signed-in">
+                            <div className="nav-user-link">
+                                <UserButton />
+                                {
+                                    user?.firstName && (
+                                        <Link href="/subscriptions"
+                                            className="nav-user-name"
+                                        >
+                                            {user.firstName}
+                                        </Link>
+                                    )
+                                }
+                            </div>
+                        </Show>
+                    </div>
 
                 </nav>
 
