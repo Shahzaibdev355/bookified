@@ -2,7 +2,7 @@
 
 const Page = () => {
   return (
-    <div>Hello World</div>
+    <div className="text-2xl underline">Hello World</div>
   );
 }
 

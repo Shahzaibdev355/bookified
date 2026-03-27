@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, IBM_Plex_Serif, Mona_Sans } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 const ibmPlexSerif = IBM_Plex_Serif({
   subsets: ["latin"],
@@ -10,7 +11,7 @@ const ibmPlexSerif = IBM_Plex_Serif({
 })
 
 const monaSans = Mona_Sans({
-  subsets: ["latin"], 
+  subsets: ["latin"],
   variable: "--font-mona-sans",
   display: "swap",
 })
@@ -30,7 +31,10 @@ export default function RootLayout({
       lang="en"
       className={`${ibmPlexSerif.variable} ${monaSans.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Navbar/>
+        {children}
+        </body>
     </html>
   );
 }
