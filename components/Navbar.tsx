@@ -3,15 +3,18 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+// import { Show, SignedIn, SignedOut, SignInButton, SignUpButton, UserButton } from "@clerk/nextjs";
+import { Show, SignInButton, SignUpButton, UserButton } from "@clerk/nextjs";
+
 
 const navItems = [
-    {label: "Library", href: "/"},
-    {label: "Add New", href: "/books/new"},
+    { label: "Library", href: "/" },
+    { label: "Add New", href: "/books/new" },
 ]
 
 const Navbar = () => {
 
-    const pathName = usePathname ();
+    const pathName = usePathname();
 
     return (
         <header className="w-full fixed z-50 bg-[var(--bg-primary)] border-b border-[var(--border-subtle)]">
@@ -26,20 +29,39 @@ const Navbar = () => {
                 </Link>
 
                 <nav className="w-fit flex gap-7.5 items-center">
-                {navItems.map(({label, href})=>{ 
-                    const isActive = pathName === href || (href !== "/" && pathName.startsWith(href));
+                    {navItems.map(({ label, href }) => {
+                        const isActive = pathName === href || (href !== "/" && pathName.startsWith(href));
 
-                    return (
-                        <Link key={href} href={label} 
-                        className={cn('nav-link-base',
-                            isActive ? 'nav-link-active' :
-                             'text-black hover:opacity-70'
-                        )}>
-                            {label}
-                        </Link>
-                    )
+                        return (
+                            <Link key={href} href={label}
+                                className={cn('nav-link-base',
+                                    isActive ? 'nav-link-active' :
+                                        'text-black hover:opacity-70'
+                                )}>
+                                {label}
+                            </Link>
+                        )
 
-                })}
+                    })}
+
+
+                    {/* <SignedOut>
+                    <SignInButton mode="modal"/>
+                </SignedOut>
+
+                <SignedIn>
+                    <UserButton/>
+                </SignedIn> */}
+
+                    <Show when="signed-out">
+                        <SignInButton mode="modal" />
+                        {/* <SignUpButton mode="modal" /> */}
+                    </Show>
+
+                    <Show when="signed-in">
+                        <UserButton />
+                    </Show>
+
                 </nav>
 
             </div>
