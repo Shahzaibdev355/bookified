@@ -15,7 +15,9 @@ const navItems = [
 const Navbar = () => {
 
     const pathName = usePathname();
+
     const { user } = useUser()
+    
 
     return (
         <header className="w-full fixed z-50 bg-[var(--bg-primary)] border-b border-[var(--border-subtle)]">
