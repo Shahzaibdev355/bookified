@@ -969,3 +969,88 @@ button[data-variant='unstyled'] *,
   100% { transform: translateX(200%); }
 }
 .animate-shimmer { animation: shimmer 1.2s infinite; }
+
+
+
+
+/* ─────────────────────────────────────────
+   Book Details Page — paste into globals.css
+   ───────────────────────────────────────── */
+
+   .book-page-container {
+    @apply relative min-h-screen;
+    background-color: #fdf6ec;
+  }
+  
+  .vapi-header-card {
+    @apply rounded-2xl p-6;
+    background-color: #f3e4c7;
+  }
+  
+  /* 
+    Mic button: absolutely positioned so it sits
+    exactly half on / half off the bottom-right corner
+    of the 120px-wide cover image.
+    bottom-0 right-0 = aligned to parent edge,
+    then translate pulls it back onto the image corner.
+  */
+  .vapi-mic-btn {
+    @apply absolute bottom-0 right-0
+           flex items-center justify-center
+           w-[52px] h-[52px] rounded-full
+           bg-white text-stone-400
+           hover:text-stone-700
+           transition-colors duration-150
+           cursor-pointer;
+    /* shift half the button back onto the image corner */
+    /* transform: translate(-8px, -8px); */
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.12);
+    border: none;
+  }
+  
+  .vapi-status-indicator {
+    @apply inline-flex items-center gap-2
+           bg-white text-stone-600 text-sm
+           px-4 py-1.5 rounded-full;
+    border: 1.5px solid #e5e7eb;
+  }
+  
+  /* dot is now a Lucide <Circle> — no need for this class,
+     kept for safety in case it's referenced elsewhere */
+  .vapi-status-dot {
+    @apply w-2 h-2 rounded-full flex-shrink-0;
+    background-color: #9ca3af;
+  }
+  
+  .vapi-status-text {
+    @apply whitespace-nowrap text-sm text-stone-600;
+  }
+  
+  .transcript-container {
+    @apply bg-white rounded-2xl
+           min-h-[400px] flex items-center justify-center p-8;
+  }
+  
+  .transcript-empty {
+    @apply flex flex-col items-center gap-3 text-center;
+  }
+  
+  .transcript-empty-text {
+    @apply text-stone-800 font-semibold text-lg;
+  }
+  
+  .transcript-empty-hint {
+    @apply text-stone-400 text-sm;
+  }
+  
+  .back-btn-floating {
+    @apply fixed top-24 left-6 z-50
+           flex items-center justify-center
+           w-10 h-10 rounded-full
+           bg-white text-stone-600
+           hover:text-stone-900
+           active:scale-95
+           transition-all duration-150;
+    border: 1.5px solid #e5e7eb;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.08);
+  }
