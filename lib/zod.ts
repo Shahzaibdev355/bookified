@@ -1,18 +1,36 @@
 import { z } from "zod";
+import { ACCEPTED_IMAGE_TYPES, ACCEPTED_PDF_TYPES } from "./constants";
 
 const MAX_PDF_SIZE = 50 * 1024 * 1024;
 const MAX_IMAGE_SIZE = 5 * 1024 * 1024;
 
 export const formSchema = z.object({
     pdfFile: z
-        .instanceof(File, { message: "Please upload a PDF file." })
-        .refine((f) => f.type === "application/pdf", "Only PDF allowed")
-        .refine((f) => f.size <= MAX_PDF_SIZE, "PDF must be under 50MB"),
+        .any()
+        .refine((file) => file instanceof File, "Book PDF is required.")
+        .refine((file) => file?.size <= MAX_PDF_SIZE, "PDF must be under 50MB")
+        .refine((file) => ACCEPTED_PDF_TYPES.includes(file?.type),
+            "Only PDF files are allowed."
+        ),
+    // .instanceof(File, { message: "Please upload a PDF file." })
+    // .refine((f) => f.type === "application/pdf", "Only PDF allowed")
+    // .refine((f) => f.size <= MAX_PDF_SIZE, "PDF must be under 50MB"),
 
     coverImage: z
-        .instanceof(File)
-        .refine((f) => f.size <= MAX_IMAGE_SIZE, "Image must be under 5MB")
-        .optional(),
+        .any()
+        .optional()
+        .refine((file) => {
+            if (!file) return true;
+            return file instanceof File;
+        }, "Cover image must be a file")
+        .refine((file) => {
+            if (!file) return true;
+            return file.size <= MAX_IMAGE_SIZE;
+        }, "Image size must be less than 10MB.")
+        .refine((file) => {
+            if (!file) return true;
+            return ACCEPTED_IMAGE_TYPES.includes(file.type);
+        }, "Only .jpg, .jpeg, .png and .webp formats are supported."),
 
     title: z
         .string()

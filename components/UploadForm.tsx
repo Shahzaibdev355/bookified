@@ -41,7 +41,7 @@ const LoadingOverlay = () => (
 const UploadForm = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
 
-    const userId = useAuth()
+    const { userId } = useAuth()
 
     const router = useRouter();
 
@@ -103,7 +103,8 @@ const UploadForm = () => {
                 })
                 coverUrl = uploadedCoverBlob.url;
             } else {
-                const response = await fetch(parsePDFFile.cover)
+                // const response = await fetch(parsePDFFile.cover)
+                const response = await fetch(parsedPDF.cover)
                 const blob = await response.blob();
 
                 const uploadedCoverBlob = await upload(`${fileTitle}_cover.png`, blob, {
@@ -116,13 +117,25 @@ const UploadForm = () => {
             }
 
 
+            // const book = await createBook({
+            //     clerkId: userId,
+            //     title: data.title,
+            //     author: data.author,
+            //     persona: data.persona,
+            //     fileURL: uploadedPdfBlob.url,
+            //     coverURL: coverUrl,
+            //     fileSize: pdfFile.size,
+            // });
+
             const book = await createBook({
                 clerkId: userId,
                 title: data.title,
                 author: data.author,
                 persona: data.persona,
                 fileURL: uploadedPdfBlob.url,
-                coberURL: coverUrl,
+                fileBlobKey: uploadedPdfBlob.pathname,
+                coverURL: coverUrl,
+                coverBlobKey: uploadedPdfBlob.pathname,
                 fileSize: pdfFile.size,
             });
 
@@ -130,14 +143,23 @@ const UploadForm = () => {
                 throw new Error("Failed to create book record in the database.");
             }
 
-            if (book.alreadyExists) {
+            if (book.alreadyExists && book.data) {
                 toast.info("A book with this title already exists. Please choose a different title.");
                 form.reset()
-                router.push(`/books/${existsCheck.book.slug}`);
+                // router.push(`/books/${existsCheck.book.slug}`);
+                router.push(`/books/${book.data.slug}`);
                 return;
             }
 
-            const segments = await saveBookSegments(book.data._id, userId, parsedPDF.content);
+            if (!book.success || !book.data) {
+                throw new Error("Failed to create book.");
+            }
+
+            const segments = await saveBookSegments(
+                book.data._id,
+                userId,
+                parsedPDF.content
+            );
             if (!segments.success) {
                 toast.error("Failed to save book segments. Please try again.");
                 throw new Error("Failed to save book segments to the database.");
