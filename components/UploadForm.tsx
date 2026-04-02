@@ -59,6 +59,8 @@ const UploadForm = () => {
 
     const onSubmit = async (data: FormValues) => {
 
+        console.log("submitted", data);
+
         if (!userId) {
             return toast.error("You must be signed in to upload a book.");
         }
@@ -77,7 +79,8 @@ const UploadForm = () => {
             }
 
             const fileTitle = data.title.replace(/\s+/g, "_").toLowerCase();
-            const pdfFile = data.pdfFile[0];
+            // const pdfFile = data.pdfFile[0];
+            const pdfFile = data.pdfFile;
 
             const parsedPDF = await parsePDFFile(pdfFile);
 
@@ -94,8 +97,11 @@ const UploadForm = () => {
 
             let coverUrl: string;
 
-            if (data.coverImage && data.coverImage.length > 0) {
-                const coverFile = data.coverImage[0];
+            // if (data.coverImage && data.coverImage.length > 0) {
+            //     const coverFile = data.coverImage[0];
+
+            if (data.coverImage) {
+                const coverFile = data.coverImage;
                 const uploadedCoverBlob = await upload(`${fileTitle}_cover.png`, coverFile, {
                     access: "public",
                     handleUploadUrl: '/api/upload',

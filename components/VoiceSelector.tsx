@@ -1,8 +1,14 @@
 "use client";
 
 import { Field, FieldError, FieldLabel } from "@/components/ui/field";
+import { FormValues } from "@/lib/zod";
+import { UseFormReturn } from "react-hook-form";
 
-const VoiceSelector = ({ form }: any) => {
+interface VoiceSelectorProps {
+    form: UseFormReturn<FormValues>;
+}
+
+const VoiceSelector = ({ form }: VoiceSelectorProps) => {
 
     const voices = {
         male: [
@@ -15,8 +21,6 @@ const VoiceSelector = ({ form }: any) => {
             { id: "sarah", name: "Sarah", desc: "Soft & approachable" },
         ],
     };
-
-    const value = form.watch("voice");
 
     return (
         <Field>
@@ -33,17 +37,17 @@ const VoiceSelector = ({ form }: any) => {
                             <button
                                 key={v.id}
                                 type="button"
-                                onClick={() => form.setValue("voice", v.id)}
-                                className={`voice-selector-option rounded-xl border-2 px-4 py-3 text-left transition-all ${form.watch("voice") === v.id
+                                onClick={() => form.setValue("persona", v.id)}
+                                className={`voice-selector-option rounded-xl border-2 px-4 py-3 text-left transition-all ${form.watch("persona") === v.id
                                     ? "voice-selector-option-selected border-[#663820] bg-[#663820]/5 shadow-sm"
                                     : "border-[#e2d8cf] bg-white hover:border-[#c8b8a2]"
                                     }`}
                             >
                                 <div className="flex items-start gap-2">
                                     <span
-                                        className={`mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full border-2 transition-colors ${form.watch("voice") === v.id ? "border-[#663820]" : "border-[#c8b8a2]"}`}
+                                        className={`mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full border-2 transition-colors ${form.watch("persona") === v.id ? "border-[#663820]" : "border-[#c8b8a2]"}`}
                                     >
-                                        {form.watch("voice") === v.id && (
+                                        {form.watch("persona") === v.id && (
                                             <span className="h-2 w-2 rounded-full bg-[#663820]" />
                                         )}
                                     </span>
@@ -67,17 +71,17 @@ const VoiceSelector = ({ form }: any) => {
                             <button
                                 key={v.id}
                                 type="button"
-                                onClick={() => form.setValue("voice", v.id)}
-                                className={`voice-selector-option rounded-xl border-2 px-4 py-3 text-left transition-all ${form.watch("voice") === v.id
+                                onClick={() => form.setValue("persona", v.id)}
+                                className={`voice-selector-option rounded-xl border-2 px-4 py-3 text-left transition-all ${form.watch("persona") === v.id
                                     ? "voice-selector-option-selected border-[#663820] bg-[#663820]/5 shadow-sm"
                                     : "border-[#e2d8cf] bg-white hover:border-[#c8b8a2]"
                                     }`}
                             >
                                 <div className="flex items-start gap-2">
                                     <span
-                                        className={`mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full border-2 transition-colors ${form.watch("voice") === v.id ? "border-[#663820]" : "border-[#c8b8a2]"}`}
+                                        className={`mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full border-2 transition-colors ${form.watch("persona") === v.id ? "border-[#663820]" : "border-[#c8b8a2]"}`}
                                     >
-                                        {form.watch("voice") === v.id && (
+                                        {form.watch("persona") === v.id && (
                                             <span className="h-2 w-2 rounded-full bg-[#663820]" />
                                         )}
                                     </span>
@@ -92,9 +96,9 @@ const VoiceSelector = ({ form }: any) => {
                 </div>
             </div>
 
-            {form.formState.errors.voice && (
+            {form.formState.errors.persona && (
                 <FieldError>
-                    {form.formState.errors.voice.message}
+                    {form.formState.errors.persona.message}
                 </FieldError>
             )}
         </Field>

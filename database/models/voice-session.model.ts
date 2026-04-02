@@ -12,9 +12,9 @@ const VoiceSessionSchema = new Schema<IVoiceSession>({
 
 VoiceSessionSchema.index({ clerkId: 1, billingPeriodStart: 1 });
 
-export const VoiceSession = mongoose.model<IVoiceSession>('VoiceSession', VoiceSessionSchema);
+// export const VoiceSession = mongoose.model<IVoiceSession>('VoiceSession', VoiceSessionSchema);
 
 
-// const VoiceSession = models.VoiceSession || model<IVoiceSession>('VoiceSession', VoiceSessionSchema);
+export const VoiceSession = models.VoiceSession || model<IVoiceSession>('VoiceSession', VoiceSessionSchema);
 
 // export default VoiceSession;

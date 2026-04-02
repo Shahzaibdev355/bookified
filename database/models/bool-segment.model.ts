@@ -18,8 +18,8 @@ BookSegmentSchema.index({ bookId: 1, pageNumber: 1 });
 
 BookSegmentSchema.index({ bookId: 1, content: 'text' });
 
-export const BookSegment = mongoose.model<IBookSegment>('BookSegment', BookSegmentSchema);
+// export const BookSegment = mongoose.model<IBookSegment>('BookSegment', BookSegmentSchema);
 
-// const BookSegment = models.BookSegment || model<IBookSegment>('BookSegment', BookSegmentSchema);
+export const BookSegment = models.BookSegment || model<IBookSegment>('BookSegment', BookSegmentSchema);
 
 // export default BookSegment;
