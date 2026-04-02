@@ -8,6 +8,28 @@ import { Book } from "@/database/models/book.model";
 import { BookSegment } from "@/database/models/bool-segment.model";
 
 
+export const getAllBooks = async () => {
+    try {
+
+        await connectDB();
+
+        const books = await Book.find().sort({ createdAt: -1 }).lean();
+
+        return{
+            success: true,
+            data: serializeData(books)
+        }
+
+    }
+    catch (e) {
+        console.error("Error connecting to database:", e);
+        return {
+            success: false,
+            error: e
+        }
+    }
+}
+
 
 export const checkBookExists = async (title: string) => {
 
@@ -110,7 +132,7 @@ export const saveBookSegments = async (bookId: string, clerkId: string, segments
         await BookSegment.deleteMany({ bookId });
         await Book.findByIdAndDelete(bookId);
         console.log("deleted book and segments due to failure in saving segments");
-        return{
+        return {
             success: false,
             error: error
         }

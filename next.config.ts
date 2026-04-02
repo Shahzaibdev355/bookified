@@ -8,6 +8,9 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'covers.openlibrary.org'
       },
+      { protocol: 'https', 
+        hostname: "sz4daikm1c5kqy9p.public.blob.vercel-storage.com" 
+      }
     ]
   }
 };
