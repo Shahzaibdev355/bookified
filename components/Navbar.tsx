@@ -36,7 +36,7 @@ const Navbar = () => {
                         const isActive = pathName === href || (href !== "/" && pathName.startsWith(href));
 
                         return (
-                            <Link key={href} href={label}
+                            <Link key={label} href={href}
                                 className={cn('nav-link-base',
                                     isActive ? 'nav-link-active' :
                                         'text-black hover:opacity-70'

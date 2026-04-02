@@ -110,6 +110,9 @@ export const saveBookSegments = async (bookId: string, clerkId: string, segments
         await BookSegment.deleteMany({ bookId });
         await Book.findByIdAndDelete(bookId);
         console.log("deleted book and segments due to failure in saving segments");
-
+        return{
+            suscess: false,
+            error: error
+        }
     }
 }

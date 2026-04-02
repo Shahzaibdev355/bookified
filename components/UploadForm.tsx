@@ -21,7 +21,7 @@ import BookCoverImage from "./BookCoverImage";
 import CoverImageUpload from "./CoverImageUpload";
 import { useAuth } from "@clerk/nextjs";
 import { toast } from "sonner";
-import { checkBookExists } from "@/lib/actions/book.action";
+import { checkBookExists, createBook, saveBookSegments } from "@/lib/actions/book.action";
 import { useRouter } from "next/navigation";
 import { parsePDFFile } from "@/lib/utils";
 import { upload } from "@vercel/blob/client";
@@ -47,7 +47,14 @@ const UploadForm = () => {
 
     const form = useForm<FormValues>({
         resolver: zodResolver(formSchema),
-        defaultValues: { title: "", author: "", voice: "rachel" },
+        defaultValues: {
+            title: "",
+            author: "",
+            persona: "",
+            pdfFile: undefined,
+            coverImage: undefined,
+
+        },
     });
 
     const onSubmit = async (data: FormValues) => {
@@ -108,6 +115,37 @@ const UploadForm = () => {
                 coverUrl = uploadedCoverBlob.url;
             }
 
+
+            const book = await createBook({
+                clerkId: userId,
+                title: data.title,
+                author: data.author,
+                persona: data.persona,
+                fileURL: uploadedPdfBlob.url,
+                coberURL: coverUrl,
+                fileSize: pdfFile.size,
+            });
+
+            if (!book.success) {
+                throw new Error("Failed to create book record in the database.");
+            }
+
+            if (book.alreadyExists) {
+                toast.info("A book with this title already exists. Please choose a different title.");
+                form.reset()
+                router.push(`/books/${existsCheck.book.slug}`);
+                return;
+            }
+
+            const segments = await saveBookSegments(book.data._id, userId, parsedPDF.content);
+            if (!segments.success) {
+                toast.error("Failed to save book segments. Please try again.");
+                throw new Error("Failed to save book segments to the database.");
+            }
+
+
+            form.reset();
+            router.push('/');
 
 
 
