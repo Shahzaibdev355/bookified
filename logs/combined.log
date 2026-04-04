@@ -430,3 +430,119 @@
 [2026-04-05 01:54:56] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-00.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
 [2026-04-05 01:55:01] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-00.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
 [2026-04-05 01:55:06] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-00.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 02:52:50] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-05 03:21:20] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-00.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-05 03:21:36] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-00.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-05 03:21:36] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-00.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-05 03:21:39] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-00.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-05 03:22:35] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-00.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-05 03:22:40] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-00.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}

@@ -164,18 +164,18 @@ const BookIllustration = () => (
 
 const HeroSection = () => {
   return (
-    <section className="w-full pt-8 pb-15" style={{marginTop: ''}}>
+    <section className="w-full pt-8 pb-15" style={{ marginTop: '' }}>
       <div
         className="mx-auto rounded-2xl overflow-hidden pt-5 pb-5"
         style={{ backgroundColor: "#F3E3C5" }}
       >
-        <div className="flex items-center gap-0 min-h-[240px]">
+        <div className="flex flex-col md:flex-row items-center gap-0 min-h-[240px]">
 
           {/* LEFT – Heading, description, CTA */}
-          <div className="flex-1 px-10 py-10 flex flex-col justify-center gap-5">
+          <div className="flex-1 px-6 md:px-10 py-6 md:py-10 flex flex-col justify-center gap-5 w-full">
             <div>
               <h1
-                className="text-4xl font-bold tracking-tight mb-3 font-serif"
+                className="text-3xl md:text-4xl font-bold tracking-tight mb-3 font-serif"
                 style={{ color: "#1a1208" }}
               >
                 Your Library
@@ -211,18 +211,14 @@ const HeroSection = () => {
           </div>
 
           {/* CENTER – Illustration */}
-          <div
-            className="flex-1 flex items-end justify-center"
-            // style={{ width: "320px", height: "240px" }}
-          >
-            {/* <BookIllustration /> */}
+          <div className="flex-1 flex items-end justify-center order-first md:order-none">
             <Image src="/assets/hero-illustration.png" alt="Hero Illustration" width={360} height={260} />
           </div>
 
           {/* RIGHT – Steps card */}
-          <div className="flex-shrink-0 pr-8 pl-4 py-8 flex items-center">
+          <div className="flex-shrink-0 px-6 md:pr-8 md:pl-4 py-6 md:py-8 flex items-center w-full md:w-auto">
             <div
-              className="rounded-xl px-5 py-5 flex flex-col gap-4 shadow-sm"
+              className="rounded-xl px-5 py-5 flex flex-col gap-4 shadow-sm w-full md:w-auto"
               style={{
                 backgroundColor: "#ffffff",
                 minWidth: "210px",
