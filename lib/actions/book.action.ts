@@ -8,6 +8,10 @@ import { Book } from "@/database/models/book.model";
 import { BookSegment } from "@/database/models/bool-segment.model";
 import mongoose from "mongoose";
 
+import { revalidatePath } from "next/cache";
+
+
+
 
 export const getAllBooks = async () => {
     try {
@@ -106,6 +110,7 @@ export const createBook = async (data: CreateBook) => {
         // check subscription limit before creating a book
 
         const book = await Book.create({ ...data, slug, totalSegments: 0 });
+        revalidatePath('/')
         return {
             success: true,
             data: serializeData(book),
@@ -193,6 +198,13 @@ export const searchBookSegments = async (bookId: string, query: string, limit: n
         if (segments.length === 0) {
             const keywords = query.split(/\s+/).filter((k) => k.length > 2);
             const pattern = keywords.map(escapeRegex).join('|');
+
+            if(keywords.length === 0){
+                return {
+                    success: true,
+                    data: [],
+                }
+            }
 
             segments = await BookSegment.find({
                 bookId: bookObjectId,
