@@ -3,10 +3,12 @@
 import { useEffect, useRef } from "react";
 import { Mic } from "lucide-react";
 
-interface Message {
-    role: "user" | "assistant";
-    content: string;
-}
+import { Messages as Message } from "@/types";
+
+// interface Message {
+//     role: "user" | "assistant";
+//     content: string;
+// }
 
 interface TranscriptProps {
     messages: Message[];
@@ -37,6 +39,11 @@ function Bubble({
     );
 }
 
+// Narrow any incoming role value to the Bubble component's expected union
+function toBubbleRole(role: string): "user" | "assistant" {
+    return role === "user" ? "user" : "assistant";
+}
+
 const Transcript = ({ messages, currentMessage, currentUserMessage }: TranscriptProps) => {
     const bottomRef = useRef<HTMLDivElement>(null);
     const hasContent = messages.length > 0 || currentMessage || currentUserMessage;
@@ -55,9 +62,10 @@ const Transcript = ({ messages, currentMessage, currentUserMessage }: Transcript
                 </div>
             ) : (
                 <div className="transcript-messages">
-                    {messages.map((msg, idx) => (
-                        <Bubble key={idx} role={msg.role} content={msg.content} />
-                    ))}
+                    {messages.map((msg, idx) => {
+                        const role = toBubbleRole((msg as unknown as { role: string }).role);
+                        return <Bubble key={idx} role={role} content={msg.content} />;
+                    })}
                     {currentUserMessage && (
                         <Bubble role="user" content={currentUserMessage} streaming />
                     )}
