@@ -17,7 +17,7 @@ export const PLAN_LIMITS: Record<PlanType, PlanLimits> = {
     [PLANS.FREE]: {
         maxBooks: 6,
         maxSessionsPerMonth: 10,
-        maxDurationPerSession: 5,
+        maxDurationPerSession: 3,
         hasSessionHistory: false,
     },
     [PLANS.STANDARD]: {
