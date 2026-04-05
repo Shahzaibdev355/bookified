@@ -14,6 +14,30 @@ import { getUserPlanLimits } from "../subscription-utils";
 
 
 
+// export const getAllBooks = async () => {
+//     try {
+
+//         await connectDB();
+
+//         const books = await Book.find().sort({ createdAt: -1 }).lean();
+
+//         return {
+//             success: true,
+//             data: serializeData(books)
+//         }
+
+//     }
+//     catch (e) {
+//         console.error("Error connecting to database:", e);
+//         return {
+//             success: false,
+//             error: e
+//         }
+//     }
+// }
+
+
+
 export const getAllBooks = async (search?: string) => {
     try {
         await connectDB();
@@ -46,33 +70,6 @@ export const getAllBooks = async (search?: string) => {
 }
 
 
-// export const getAllBooks = async ({ query = "" }: { query?: string } = {}) => {
-//     try {
-//         await connectDB();
-
-//         const filter = query
-//             ? {
-//                 $or: [
-//                     { title: { $regex: query, $options: "i" } },
-//                     { author: { $regex: query, $options: "i" } },
-//                 ],
-//               }
-//             : {};
-
-//         const books = await Book.find(filter).sort({ createdAt: -1 }).lean();
-
-//         return {
-//             success: true,
-//             data: serializeData(books)
-//         };
-//     } catch (e) {
-//         console.error("Error connecting to database:", e);
-//         return {
-//             success: false,
-//             error: e
-//         };
-//     }
-// };
 
 
 export const getBookBySlug = async (slug: string) => {
@@ -206,7 +203,7 @@ export const createBook = async (data: CreateBook) => {
             data: serializeData(book),
         };
 
-
+        
     } catch (error) {
         console.error('Error creating book:', error);
         return { success: false, error };
