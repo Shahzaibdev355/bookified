@@ -1214,3 +1214,59 @@ button[data-variant='unstyled'] *,
 .vapi-mic-btn:active {
   transform: scale(0.97);
 }
+
+
+
+
+
+
+/* ── Subscriptions / Pricing page ───────────────────────────────────── */
+
+.subscriptions-header {
+  text-align: center;
+  margin-top: 6.5pc;
+  margin-bottom: 2.5rem;
+}
+
+.subscriptions-title {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: var(--text-primary, #1a1a1a);
+  margin-bottom: 0.5rem;
+}
+
+.subscriptions-subtitle {
+  font-size: 1rem;
+  color: var(--text-secondary, #6b7280);
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.pricing-table-wrapper {
+  /* max-width: 960px; */
+  width: 100%;
+  margin-bottom: 3.5pc;
+  /* margin: auto; */
+  /* Let Clerk's PricingTable render at its natural width */
+}
+
+/* Override Clerk PricingTable tokens to match app design system */
+.cl-pricingTable {
+  --cl-border-radius: 0.75rem;
+  --cl-colorPrimary: var(--accent, #2563eb);
+  --cl-colorBackground: var(--bg-card, #ffffff);
+  --cl-colorText: var(--text-primary, #1a1a1a);
+  --cl-colorTextSecondary: var(--text-secondary, #6b7280);
+  --cl-colorBorder: var(--border-subtle, #e5e7eb);
+}
+
+/* Responsive stacking on mobile */
+@media (max-width: 640px) {
+  .pricing-table-wrapper {
+      padding: 0 0.25rem;
+  }
+
+  .subscriptions-header {
+      margin-bottom: 1.5rem;
+  }
+}

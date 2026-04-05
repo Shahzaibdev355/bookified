@@ -140,3 +140,13 @@ export interface EndSessionResult {
     success: boolean;
     error?: string;
 }
+
+
+// In types.d.ts — wherever your book action return type lives:
+export interface CreateBookResult {
+    success: boolean;
+    data?: IBook;
+    alreadyExists?: boolean;
+    limitError?: boolean;
+    error?: string | unknown;
+}

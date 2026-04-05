@@ -9,6 +9,7 @@ import { BookSegment } from "@/database/models/bool-segment.model";
 import mongoose from "mongoose";
 
 import { revalidatePath } from "next/cache";
+import { getUserPlanLimits } from "../subscription-utils";
 
 
 
@@ -20,7 +21,7 @@ export const getAllBooks = async () => {
 
         const books = await Book.find().sort({ createdAt: -1 }).lean();
 
-        return{
+        return {
             success: true,
             data: serializeData(books)
         }
@@ -90,41 +91,89 @@ export const checkBookExists = async (title: string) => {
 }
 
 
+// export const createBook = async (data: CreateBook) => {
+//     try {
+
+//         await connectDB()
+
+//         const slug = generateSlug(data.title);
+
+//         const existingBook = await Book.findOne({ slug }).lean();
+
+//         if (existingBook) {
+//             return {
+//                 success: true,
+//                 data: serializeData(existingBook),
+//                 alreadyExists: true
+//             }
+//         }
+
+//         // check subscription limit before creating a book
+
+//         const book = await Book.create({ ...data, slug, totalSegments: 0 });
+//         revalidatePath('/')
+//         return {
+//             success: true,
+//             data: serializeData(book),
+//         }
+
+
+//     } catch (error) {
+//         console.error("Error creating book:", error);
+//         return {
+//             success: false,
+//             error: error
+//         }
+//     }
+// }
+
 export const createBook = async (data: CreateBook) => {
     try {
-
-        await connectDB()
+        await connectDB();
 
         const slug = generateSlug(data.title);
 
         const existingBook = await Book.findOne({ slug }).lean();
-
         if (existingBook) {
             return {
                 success: true,
                 data: serializeData(existingBook),
-                alreadyExists: true
-            }
+                alreadyExists: true,
+            };
         }
 
-        // check subscription limit before creating a book
+        // ── Subscription enforcement ──────────────────────────────────────
+        const { plan, limits } = await getUserPlanLimits();
+        const bookCount = await Book.countDocuments({ clerkId: data.clerkId });
+
+        if (bookCount >= limits.maxBooks) {
+            // return {
+            //     success: false,
+            //     limitError: true,
+            //     error: `Your ${plan} plan allows up to ${limits.maxBooks} book${limits.maxBooks === 1 ? '' : 's'}. Please upgrade to add more.`,
+            // };
+
+            return {
+                success: false as const,
+                limitError: true as const,
+                error: `Your ${plan} plan allows up to ${limits.maxBooks} book${limits.maxBooks === 1 ? '' : 's'}. Please upgrade to add more.`,
+            };
+        }
+        // ─────────────────────────────────────────────────────────────────
 
         const book = await Book.create({ ...data, slug, totalSegments: 0 });
-        revalidatePath('/')
+        revalidatePath('/');
         return {
             success: true,
             data: serializeData(book),
-        }
+        };
 
-
+        
     } catch (error) {
-        console.error("Error creating book:", error);
-        return {
-            success: false,
-            error: error
-        }
+        console.error('Error creating book:', error);
+        return { success: false, error };
     }
-}
+};
 
 
 export const saveBookSegments = async (bookId: string, clerkId: string, segments: TextSegment[]) => {
@@ -199,7 +248,7 @@ export const searchBookSegments = async (bookId: string, query: string, limit: n
             const keywords = query.split(/\s+/).filter((k) => k.length > 2);
             const pattern = keywords.map(escapeRegex).join('|');
 
-            if(keywords.length === 0){
+            if (keywords.length === 0) {
                 return {
                     success: true,
                     data: [],

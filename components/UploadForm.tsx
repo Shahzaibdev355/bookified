@@ -145,8 +145,14 @@ const UploadForm = () => {
                 fileSize: pdfFile.size,
             });
 
-            if (!book.success) {
-                throw new Error("Failed to create book record in the database.");
+            // ── Plan limit hit ───────────────────────────────────────────────
+            if (!book.success && book.limitError) {
+                toast.error(
+                    typeof book.error === 'string'
+                        ? book.error
+                        : 'Book limit reached. Please upgrade your plan.'
+                );
+                return; // stop here, don't throw so finally still runs cleanly
             }
 
             if (book.alreadyExists && book.data) {
@@ -157,9 +163,19 @@ const UploadForm = () => {
                 return;
             }
 
+
+            // ── Generic failure ──────────────────────────────────────────────
             if (!book.success || !book.data) {
-                throw new Error("Failed to create book.");
+                throw new Error(
+                    typeof book.error === 'string'
+                        ? book.error
+                        : 'Failed to create book.'
+                );
             }
+
+            // if (!book.success || !book.data) {
+            //     throw new Error("Failed to create book.");
+            // }
 
             const segments = await saveBookSegments(
                 book.data._id,

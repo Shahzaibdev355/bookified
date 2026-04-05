@@ -3,13 +3,13 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-// import { Show, SignedIn, SignedOut, SignInButton, SignUpButton, UserButton } from "@clerk/nextjs";
 import { Show, SignInButton, SignUpButton, UserButton, useUser } from "@clerk/nextjs";
 
 
 const navItems = [
     { label: "Library", href: "/" },
     { label: "Add New", href: "/books/new" },
+    { label: "Pricing", href: "/subscriptions" },
 ]
 
 const Navbar = () => {
@@ -67,11 +67,12 @@ const Navbar = () => {
                                 <UserButton />
                                 {
                                     user?.firstName && (
-                                        <Link href="/subscriptions"
+                                        <h3 
+                                        // href="/subscriptions"
                                             className="nav-user-name"
                                         >
                                             {user.firstName}
-                                        </Link>
+                                        </h3>
                                     )
                                 }
                             </div>
