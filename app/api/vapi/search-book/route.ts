@@ -91,16 +91,7 @@ export async function POST(request: Request) {
             }
         }
 
-
-        const response = NextResponse.json({ results });
-
-        // Add CORS headers
-        response.headers.set('Access-Control-Allow-Origin', '*');
-        response.headers.set('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-        response.headers.set('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-
-        // return NextResponse.json({ results });
-        return response;
+        return NextResponse.json({ results });
     } catch (error) {
         console.error('Vapi search-book error:', error);
         return NextResponse.json({
