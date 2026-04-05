@@ -50,6 +50,13 @@ export async function POST(request: Request) {
     try {
         const body = await request.json();
 
+
+        // ADD THIS - log everything raw
+        console.log('=== RAW VAPI BODY ===', JSON.stringify(body, null, 2));
+        console.log('functionCall:', body?.message?.functionCall);
+        console.log('toolCallList:', body?.message?.toolCallList);
+        console.log('toolCalls:', body?.message?.toolCalls);
+
         console.log('Vapi search-book request:', JSON.stringify(body, null, 2));
 
         // Support multiple Vapi formats
