@@ -1,6 +1,6 @@
-import { searchBookSegments } from '@/lib/actions/book.action';
 import { NextResponse } from 'next/server';
 
+import { searchBookSegments } from '@/lib/actions/book.action';
 
 // Helper function to process book search logic
 async function processBookSearch(bookId: unknown, query: unknown) {
@@ -91,7 +91,16 @@ export async function POST(request: Request) {
             }
         }
 
-        return NextResponse.json({ results });
+
+        const response = NextResponse.json({ results });
+
+        // Add CORS headers
+        response.headers.set('Access-Control-Allow-Origin', '*');
+        response.headers.set('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+        response.headers.set('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+
+        // return NextResponse.json({ results });
+        return response;
     } catch (error) {
         console.error('Vapi search-book error:', error);
         return NextResponse.json({
