@@ -20,7 +20,8 @@ const VapiControls = ({ book }: { book: IBook }) => {
         duration,
         start,
         stop,
-        clearError
+        clearError,
+        maxDurationSeconds
     } = useVapi(book);
 
     const handleMicClick = () => {
@@ -37,7 +38,9 @@ const VapiControls = ({ book }: { book: IBook }) => {
     const formatDuration = (seconds: number) => {
         const m = Math.floor(seconds / 60);
         const s = seconds % 60;
-        return `${m}:${String(s).padStart(2, "0")}/15:00`;
+        const maxM = Math.floor(maxDurationSeconds / 60);
+        const maxS = maxDurationSeconds % 60;
+        return `${m}:${String(s).padStart(2, "0")}/${maxM}:${String(maxS).padStart(2, "0")}`;
     };
 
     // Status dot color
@@ -48,12 +51,15 @@ const VapiControls = ({ book }: { book: IBook }) => {
                 ? "fill-emerald-400 text-emerald-400"
                 : "fill-stone-400 text-stone-400";
 
+    // "Listening" when mic is active and agent is idle
     const statusLabel =
         status === "thinking"
             ? "Thinking…"
             : status === "speaking"
                 ? "Speaking"
-                : "Ready";
+                : micActive   // ← mic is on but agent not speaking/thinking = listening
+                    ? "Listening"
+                    : "Ready";
 
     return (
         <>
@@ -85,7 +91,7 @@ const VapiControls = ({ book }: { book: IBook }) => {
                             onClick={handleMicClick}
                             onMouseEnter={() => setIsHovered(true)}
                             onMouseLeave={() => setIsHovered(false)}
-                            disabled={status === "connecting"|| status === "thinking" || status === "speaking"}
+                            disabled={status === "connecting" || status === "thinking" || status === "speaking"}
                         >
                             {micActive ? <Mic size={22} /> : <MicOff size={22} />}
                         </button>

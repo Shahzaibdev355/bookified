@@ -14,7 +14,7 @@ interface BookPageProps {
 
 const BookDetailsPage = async ({ params }: BookPageProps) => {
   const { userId } = await auth();
-  if (!userId) redirect("/sign-in");
+  if (!userId) redirect("/"); 
 
   const { slug } = await params;
   const result = await getBookBySlug(slug);

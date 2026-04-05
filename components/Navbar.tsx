@@ -8,16 +8,17 @@ import { Show, SignInButton, SignUpButton, UserButton, useUser } from "@clerk/ne
 
 const navItems = [
     { label: "Library", href: "/" },
-    { label: "Add New", href: "/books/new" },
+    { label: "Add New", href: "/books/new", protected: true },
     { label: "Pricing", href: "/subscriptions" },
 ]
+
 
 const Navbar = () => {
 
     const pathName = usePathname();
 
-    const { user } = useUser()
-    
+    const { user, isSignedIn } = useUser();
+
 
     return (
         <header className="w-full fixed z-50 bg-[var(--bg-primary)] border-b border-[var(--border-subtle)]">
@@ -32,8 +33,21 @@ const Navbar = () => {
                 </Link>
 
                 <nav className="w-fit flex gap-7.5 items-center">
-                    {navItems.map(({ label, href }) => {
+                    {/* {navItems.map(({ label, href }) => { */}
+                    {navItems.map(({ label, href, protected: isProtected }) => {
+
                         const isActive = pathName === href || (href !== "/" && pathName.startsWith(href));
+
+                        // Protected link — show SignInButton modal if not signed in
+                        if (isProtected && !isSignedIn) {
+                            return (
+                                <SignInButton key={label} mode="modal">
+                                    <button className={cn('nav-link-base', 'text-black hover:opacity-70')}>
+                                        {label}
+                                    </button>
+                                </SignInButton>
+                            );
+                        }
 
                         return (
                             <Link key={label} href={href}
@@ -67,8 +81,8 @@ const Navbar = () => {
                                 <UserButton />
                                 {
                                     user?.firstName && (
-                                        <h3 
-                                        // href="/subscriptions"
+                                        <h3
+                                            // href="/subscriptions"
                                             className="nav-user-name"
                                         >
                                             {user.firstName}
