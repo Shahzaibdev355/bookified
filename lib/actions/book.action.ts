@@ -14,27 +14,65 @@ import { getUserPlanLimits } from "../subscription-utils";
 
 
 
-export const getAllBooks = async () => {
+export const getAllBooks = async (search?: string) => {
     try {
-
         await connectDB();
 
-        const books = await Book.find().sort({ createdAt: -1 }).lean();
+        let query = {};
+
+        if (search) {
+            const escapedSearch = escapeRegex(search);
+            const regex = new RegExp(escapedSearch, 'i');
+            query = {
+                $or: [
+                    { title: { $regex: regex } },
+                    { author: { $regex: regex } },
+                ]
+            };
+        }
+
+        const books = await Book.find(query).sort({ createdAt: -1 }).lean();
 
         return {
             success: true,
             data: serializeData(books)
         }
-
-    }
-    catch (e) {
-        console.error("Error connecting to database:", e);
+    } catch (e) {
+        console.error('Error connecting to database', e);
         return {
-            success: false,
-            error: e
+            success: false, error: e
         }
     }
 }
+
+
+// export const getAllBooks = async ({ query = "" }: { query?: string } = {}) => {
+//     try {
+//         await connectDB();
+
+//         const filter = query
+//             ? {
+//                 $or: [
+//                     { title: { $regex: query, $options: "i" } },
+//                     { author: { $regex: query, $options: "i" } },
+//                 ],
+//               }
+//             : {};
+
+//         const books = await Book.find(filter).sort({ createdAt: -1 }).lean();
+
+//         return {
+//             success: true,
+//             data: serializeData(books)
+//         };
+//     } catch (e) {
+//         console.error("Error connecting to database:", e);
+//         return {
+//             success: false,
+//             error: e
+//         };
+//     }
+// };
 
 
 export const getBookBySlug = async (slug: string) => {
@@ -168,7 +206,7 @@ export const createBook = async (data: CreateBook) => {
             data: serializeData(book),
         };
 
-        
+
     } catch (error) {
         console.error('Error creating book:', error);
         return { success: false, error };
