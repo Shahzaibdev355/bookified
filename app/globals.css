@@ -96,7 +96,8 @@
   --card-foreground: #212a3b;
   --popover: #ffffff;
   --popover-foreground: #212a3b;
-  --primary: #212a3b;
+  /* --primary: #212a3b; */
+  --primary: 25 30% 28%;
   --primary-foreground: #ffffff;
   --secondary: #f3e4c7;
   --secondary-foreground: #212a3b;
@@ -132,6 +133,11 @@
   /* Layout dimensions */
   --navbar-height: 74px;
 }
+
+
+
+
+
 
 .dark {
   --background: #1a1918;
@@ -1473,4 +1479,22 @@ button[data-variant='unstyled'] *,
 
 html {
   scroll-behavior: smooth;
+}
+
+
+
+.bg-primary {
+  background-color: hsl(var(--primary));
+}
+
+.bg-gold\/50 {
+  background-color: hsl(var(--gold) / .5)
+}
+
+.bg-gold {
+  background-color: hsl(var(--gold));
+}
+
+.bg-accent {
+  background-color: hsl(var(--accent));
 }

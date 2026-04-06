@@ -1,9 +1,9 @@
 import BookCard from "@/components/BookCard";
 import CTASection from "@/components/CTASection";
 import FeaturesSection from "@/components/FeaturesSection";
-import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
+import PreviewSection from "@/components/PreviewSection";
 import SearchBar from "@/components/SearchBar";
 import { getAllBooks } from "@/lib/actions/book.action";
 import { sampleBooks } from "@/lib/constants";
@@ -27,9 +27,11 @@ const Page = async ({ searchParams }: { searchParams: Promise<{ query?: string }
 
         <FeaturesSection />
 
+        <PreviewSection/>
+
         <CTASection />
 
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-5 mb-10">
+        {/* <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-5 mb-10">
           <h2 className="text-3xl font-serif font-bold text-[#212a3b]">Recent Books</h2>
           <SearchBar />
         </div>
@@ -45,13 +47,13 @@ const Page = async ({ searchParams }: { searchParams: Promise<{ query?: string }
               slug={book.slug}
             />
           ))}
-        </div>
+        </div> */}
 
 
 
       </main>
 
-      <Footer />
+     
 
     </>
   );
