@@ -1,5 +1,9 @@
 import BookCard from "@/components/BookCard";
+import CTASection from "@/components/CTASection";
+import FeaturesSection from "@/components/FeaturesSection";
+import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
+import HowItWorksSection from "@/components/HowItWorksSection";
 import SearchBar from "@/components/SearchBar";
 import { getAllBooks } from "@/lib/actions/book.action";
 import { sampleBooks } from "@/lib/constants";
@@ -14,29 +18,42 @@ const Page = async ({ searchParams }: { searchParams: Promise<{ query?: string }
   const books = bookResults.success ? bookResults.data ?? [] : []
 
   return (
-    <main className="wrapper container">
+    <>
+      <main className="wrapper container">
 
-      <HeroSection />
+        <HeroSection />
 
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-5 mb-10">
-                <h2 className="text-3xl font-serif font-bold text-[#212a3b]">Recent Books</h2>
-                <SearchBar />
-            </div>
+        <HowItWorksSection />
 
-      <div className="library-books-grid">
-       
-        {books.map((book)=>(
-          <BookCard 
-            key={book._id}
-            title={book.title}
-            author={book.author}
-            coverURL = {book.coverURL}
-            slug = {book.slug}
-          />
-        ))}
-      </div>
+        <FeaturesSection />
 
-    </main>
+        <CTASection />
+
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-5 mb-10">
+          <h2 className="text-3xl font-serif font-bold text-[#212a3b]">Recent Books</h2>
+          <SearchBar />
+        </div>
+
+        <div className="library-books-grid">
+
+          {books.map((book) => (
+            <BookCard
+              key={book._id}
+              title={book.title}
+              author={book.author}
+              coverURL={book.coverURL}
+              slug={book.slug}
+            />
+          ))}
+        </div>
+
+
+
+      </main>
+
+      <Footer />
+
+    </>
   );
 }
 
