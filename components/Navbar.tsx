@@ -88,12 +88,7 @@ const Navbar = () => {
                         </Show>
                     </div>
 
-                    {/* <a
-                        href="#cta"
-                        className="bg-primary text-primary-foreground px-5 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity"
-                    >
-                        Get Started
-                    </a> */}
+
                 </div>
 
                 <button
@@ -107,7 +102,7 @@ const Navbar = () => {
 
             {open && (
                 <div className="md:hidden bg-background border-b border-border px-6 pb-4 space-y-3">
-                    {links.map((l) => (
+                    {/* {links.map((l) => (
                         <a
                             key={l.href}
                             href={l.href}
@@ -116,19 +111,66 @@ const Navbar = () => {
                         >
                             {l.label}
                         </a>
-                    ))}
+                    ))} */}
+
+
+
+                    {links.map(({ label, href, protected: isProtected, authOnly }) => {
+
+                        // hide completely if authOnly and not signed in
+                        if (authOnly && !isSignedIn) return null;
+
+                        // Protected link — show SignInButton modal if not signed in
+                        if (isProtected && !isSignedIn) {
+                            return (
+                                <SignInButton key={label} mode="modal">
+                                    <button className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium cursor-pointer">
+                                        {label}
+                                    </button>
+                                </SignInButton>
+                            );
+                        }
+
+                        return (
+                            <Link
+                                key={label}
+                                href={href}
+                                onClick={() => setOpen(false)}
+                                className="block text-muted-foreground hover:text-foreground transition-colors text-sm"
+                            >
+                                {label}
+                            </Link>
+                        );
+                    })}
+
+                    <div className="flex gap-7.5 items-center">
+                        <Show when="signed-out">
+                            <SignInButton mode="modal" />
+                            {/* <SignUpButton mode="modal" /> */}
+                        </Show>
+
+                        <Show when="signed-in">
+                            <div className="nav-user-link">
+                                <UserButton />
+                                {
+                                    user?.firstName && (
+                                        <h3
+                                            className="nav-user-name"
+                                            style={{display: 'inline-block'}}
+                                        >
+                                            {user.firstName}
+                                        </h3>
+                                    )
+                                }
+                            </div>
+                        </Show>
+                    </div>
 
 
 
 
 
-                    {/* <a
-            href="#cta"
-            onClick={() => setOpen(false)}
-            className="block bg-primary text-primary-foreground px-5 py-2 rounded-lg text-sm font-medium text-center"
-          >
-            Get Started
-          </a> */}
+
                 </div>
             )}
         </nav>
