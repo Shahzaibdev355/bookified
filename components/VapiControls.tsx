@@ -52,14 +52,28 @@ const VapiControls = ({ book }: { book: IBook }) => {
                 : "fill-stone-400 text-stone-400";
 
     // "Listening" when mic is active and agent is idle
+    // const statusLabel =
+    //     status === "thinking"
+    //         ? "Thinking…"
+    //         : status === "speaking"
+    //             ? "Speaking"
+    //             : micActive  
+    //                 ? "Listening"
+    //                 : "Ready";
+
     const statusLabel =
-        status === "thinking"
-            ? "Thinking…"
-            : status === "speaking"
-                ? "Speaking"
-                : micActive   // ← mic is on but agent not speaking/thinking = listening
+    status === "thinking"
+        ? "Thinking…"
+        : status === "speaking"
+            ? "Speaking"
+            : status === "connecting"
+                ? "Connecting…"
+                : micActive
                     ? "Listening"
                     : "Ready";
+
+
+    const isConnecting = micActive && status === "connecting";
 
     return (
         <>
@@ -139,6 +153,7 @@ const VapiControls = ({ book }: { book: IBook }) => {
                     messages={messages}
                     currentMessage={currentMessage}
                     currentUserMessage={currentUserMessage}
+                    isConnecting={isConnecting}
                 />
             </div>
         </>
