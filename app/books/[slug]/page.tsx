@@ -27,7 +27,7 @@ const BookDetailsPage = async ({ params }: BookPageProps) => {
   return (
     <main className="book-page-container">
       {/* Floating Back Button */}
-      <Link href="/" className="back-btn-floating" aria-label="Go back">
+      <Link href="/library" className="back-btn-floating" aria-label="Go back">
         <ArrowLeft size={20} />
       </Link>
 

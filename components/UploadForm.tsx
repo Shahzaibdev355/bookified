@@ -189,7 +189,7 @@ const UploadForm = () => {
 
 
             form.reset();
-            router.push('/');
+            router.push('/library');
 
 
 

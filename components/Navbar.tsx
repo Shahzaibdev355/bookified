@@ -1,107 +1,3 @@
-// 'use client'
-// import { cn } from "@/lib/utils";
-// import Image from "next/image";
-// import Link from "next/link";
-// import { usePathname } from "next/navigation";
-// import { Show, SignInButton, SignUpButton, UserButton, useUser } from "@clerk/nextjs";
-
-
-// const navItems = [
-//     { label: "Library", href: "/" },
-//     { label: "Add New", href: "/books/new", protected: true },
-//     { label: "Pricing", href: "/subscriptions" },
-// ]
-
-
-// const Navbar = () => {
-
-//     const pathName = usePathname();
-
-//     const { user, isSignedIn } = useUser();
-
-
-//     return (
-//         <header className="w-full fixed z-50 bg-[var(--bg-primary)] border-b border-[var(--border-subtle)]">
-//             <div className="wrapper navbar-height py-4 flex justify-between items-center">
-
-//                 <Link href="/" className="flex gap-0.5 items-center">
-//                     <Image src="/assets/logo.png" alt="bookified"
-//                         width={42}
-//                         height={42}
-//                     />
-//                     <span className="logo-text">Bookified</span>
-//                 </Link>
-
-//                 <nav className="w-fit flex gap-7.5 items-center">
-//                     {/* {navItems.map(({ label, href }) => { */}
-//                     {navItems.map(({ label, href, protected: isProtected }) => {
-
-//                         const isActive = pathName === href || (href !== "/" && pathName.startsWith(href));
-
-//                         // Protected link — show SignInButton modal if not signed in
-//                         if (isProtected && !isSignedIn) {
-//                             return (
-//                                 <SignInButton key={label} mode="modal">
-//                                     <button className={cn('nav-link-base', 'text-black hover:opacity-70')}>
-//                                         {label}
-//                                     </button>
-//                                 </SignInButton>
-//                             );
-//                         }
-
-//                         return (
-//                             <Link key={label} href={href}
-//                                 className={cn('nav-link-base',
-//                                     isActive ? 'nav-link-active' :
-//                                         'text-black hover:opacity-70'
-//                                 )}>
-//                                 {label}
-//                             </Link>
-//                         )
-
-//                     })}
-
-
-//                     {/* <SignedOut>
-//                     <SignInButton mode="modal"/>
-//                 </SignedOut>
-
-//                 <SignedIn>
-//                     <UserButton/>
-//                 </SignedIn> */}
-
-//                     <div className="flex gap-7.5 items-center">
-//                         <Show when="signed-out">
-//                             <SignInButton mode="modal" />
-//                             {/* <SignUpButton mode="modal" /> */}
-//                         </Show>
-
-//                         <Show when="signed-in">
-//                             <div className="nav-user-link">
-//                                 <UserButton />
-//                                 {
-//                                     user?.firstName && (
-//                                         <h3
-//                                             // href="/subscriptions"
-//                                             className="nav-user-name"
-//                                         >
-//                                             {user.firstName}
-//                                         </h3>
-//                                     )
-//                                 }
-//                             </div>
-//                         </Show>
-//                     </div>
-
-//                 </nav>
-
-//             </div>
-//         </header>
-//     );
-// }
-
-// export default Navbar;
-
 'use client'
 
 
@@ -116,8 +12,9 @@ import { Show, SignInButton, SignUpButton, UserButton, useUser } from "@clerk/ne
 const links = [
     { label: "How It Works", href: "#how-it-works" },
     { label: "Features", href: "#features" },
-    { label: "Preview", href: "#preview" },
+    // { label: "Preview", href: "#preview" },
     { label: "Library", href: "/library", protected: true },
+    { label: "Add Book", href: "/books/new", authOnly: true },
     { label: "Pricing", href: "/subscriptions" }
 ];
 
@@ -138,7 +35,11 @@ const Navbar = () => {
                 </Link>
 
                 <div className="hidden md:flex items-center gap-8">
-                    {links.map(({ label, href, protected: isProtected }) => {
+
+                    {links.map(({ label, href, protected: isProtected, authOnly }) => {
+
+                        // hide completely if authOnly and not signed in
+                        if (authOnly && !isSignedIn) return null;
 
                         const isActive = pathName === href || (href !== "/" && pathName.startsWith(href));
 
@@ -146,7 +47,7 @@ const Navbar = () => {
                         if (isProtected && !isSignedIn) {
                             return (
                                 <SignInButton key={label} mode="modal">
-                                    <button className={cn('nav-link-base', 'text-black hover:opacity-70')}>
+                                    <button className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium cursor-pointer">
                                         {label}
                                     </button>
                                 </SignInButton>
@@ -154,7 +55,6 @@ const Navbar = () => {
                         }
 
                         return (
-
                             <Link
                                 key={label}
                                 href={href}
@@ -162,7 +62,7 @@ const Navbar = () => {
                             >
                                 {label}
                             </Link>
-                        )
+                        );
                     })}
 
 

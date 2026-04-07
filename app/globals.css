@@ -1498,3 +1498,39 @@ html {
 .bg-accent {
   background-color: hsl(var(--accent));
 }
+
+
+.button{
+  cursor: pointer;
+}
+
+
+
+.add-book-section{
+  padding-top: 7pc;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .main-container-div {
+    margin-top: 6pc;
+    padding-bottom: 20px;
+  }
+
+  .voice-selector-option {
+    justify-content: flex-start;
+
+  }
+
+  .books-show-row{
+    overflow-x: hidden!important;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+
+}

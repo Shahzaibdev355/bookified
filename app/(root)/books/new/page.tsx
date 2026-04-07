@@ -2,7 +2,7 @@ import UploadForm from "@/components/UploadForm";
 
 const Page = () => {
     return ( 
-       <main className="wrapper container">
+       <main className="wrapper container add-book-section">
             <div className="mx-auto max-w-180 space-y-10">
                 <section className="flex flex-col gap-5">
                     <h1 className="page-title-xl">

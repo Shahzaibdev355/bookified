@@ -100,14 +100,17 @@ const VapiControls = ({ book }: { book: IBook }) => {
                     {/* Book Meta */}
                     <div className="flex flex-col gap-3 flex-1 min-w-0 text-center sm:text-left">
                         <div>
-                            <h1 className="font-serif text-2xl sm:text-3xl font-bold text-stone-800 leading-snug truncate">
+                            <h1 className="font-serif text-2xl sm:text-3xl font-bold text-stone-800 leading-snug break-words">
                                 {book.title}
                             </h1>
                             <p className="text-stone-500 mt-1 text-base">by {book.author}</p>
                         </div>
 
                         {/* Status pills */}
-                        <div className="flex flex-wrap justify-center sm:justify-start gap-2 mt-1">
+                        <div 
+                        // className="flex flex-wrap justify-center sm:justify-start gap-2 mt-1"
+                        className="grid grid-cols-2 sm:flex sm:flex-wrap justify-items-center sm:justify-start gap-2 mt-1 w-full [&>*:last-child]:col-span-2 [&>*:last-child]:justify-self-center sm:[&>*:last-child]:col-span-1"
+                                                >
                             <span className="vapi-status-indicator">
                                 <Circle
                                     size={8}

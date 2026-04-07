@@ -19,7 +19,7 @@ const Page = async ({ searchParams }: { searchParams: Promise<{ query?: string }
 
   return (
     <>
-      <main className="wrapper container">
+      <main className="wrapper container main-container-div">
 
         <HeroSection />
 

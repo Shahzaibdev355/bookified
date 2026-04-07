@@ -65,16 +65,16 @@ const HeroSection = () => {
                 {isSignedIn ? (
                   <Link
                     href="/books/new"
-                    className="bg-primary text-primary-foreground px-7 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity shadow-warm"
+                    className="bg-primary text-primary-foreground px-7 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity shadow-warm cursor-pointer"
                   >
-                    Start Your Library
+                  Add New Book
                   </Link>
                 ) : (
                   <SignInButton mode="modal">
                     <button
-                      className="bg-primary text-primary-foreground px-7 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity shadow-warm"
+                      className="bg-primary text-primary-foreground px-7 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity shadow-warm cursor-pointer"
                     >
-                      Start Your Library
+                    Add New Book
                     </button>
                   </SignInButton>
                 )}

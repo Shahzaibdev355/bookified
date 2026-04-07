@@ -707,3 +707,373 @@
 [2026-04-07 13:14:24] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
 [2026-04-07 13:18:06] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
 [2026-04-07 13:18:56] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 13:21:47] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 13:21:47] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 13:21:48] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 13:22:19] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 13:22:19] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 13:22:19] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 13:22:33] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 13:22:34] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 13:22:34] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 13:24:16] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:20] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[33mwarn[39m] : MongoDB disconnected, trying to reconnect... | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:28:32] [[32minfo[39m] : MongoDB reconnected | meta: {"service":"minest-api"}
+[2026-04-07 14:34:03] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:35:49] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:36:02] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:36:09] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:43:12] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:44:14] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:44:14] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:44:14] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:45:26] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:45:26] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:45:27] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:45:27] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:45:27] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:45:27] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:45:27] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:45:27] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:45:27] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:45:28] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:45:28] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:45:28] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:45:28] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:45:28] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:45:28] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:45:28] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:45:28] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:46:04] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:46:04] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:46:06] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:46:20] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:46:21] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:46:21] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:46:47] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:48:40] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:49:21] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:49:21] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:49:23] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:49:23] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:49:54] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:50:10] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:50:10] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:50:11] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:50:11] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:50:12] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:50:13] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:50:13] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:50:13] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:50:15] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:50:15] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:50:16] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:50:16] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:51:13] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:51:14] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:51:14] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:51:14] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:51:40] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:51:57] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:52:09] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:54:18] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:56:09] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:56:12] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:56:13] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:56:13] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:56:13] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:56:13] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:56:18] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:56:40] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:56:41] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:56:42] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:56:42] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:56:42] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:56:58] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:56:58] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:57:11] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:57:12] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:57:25] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:57:27] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:57:27] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:57:28] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:58:03] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:58:19] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:58:54] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:59:18] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:59:38] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:59:38] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:59:51] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:59:51] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:59:59] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 14:59:59] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:00:37] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:00:38] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:00:45] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:00:45] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:01:09] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:01:11] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:01:11] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:02:48] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:03:03] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:03:08] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:03:23] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:03:40] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:06:55] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:06:56] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:06:59] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:07:11] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:07:11] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:09:13] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:09:43] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:10:20] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:10:20] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:12:09] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:12:16] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:13:38] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:13:47] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:13:56] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:13:58] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:14:02] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:14:03] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:14:38] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:14:41] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:15:22] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:16:01] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:16:01] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:16:15] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:16:20] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:16:42] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:16:43] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:17:02] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:17:05] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:17:17] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:17:31] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:17:31] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:17:32] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:18:08] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:18:19] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:18:21] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:21:03] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:28:09] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:28:10] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:28:10] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:28:32] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:28:43] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:28:49] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:28:50] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:28:50] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:28:50] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:28:51] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:29:06] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:33:14] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:33:15] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:33:15] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:33:26] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:35:12] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:35:14] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:35:16] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:35:37] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:36:10] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:36:11] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:36:12] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:36:12] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:36:12] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:36:12] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:36:12] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:36:13] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:36:13] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:36:14] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:36:19] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:36:27] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:36:42] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:41:16] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:41:28] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:41:29] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:41:31] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:41:42] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:41:57] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:43:10] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:43:18] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:43:52] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:43:55] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:43:58] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:43:58] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:43:58] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:43:58] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:43:59] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:43:59] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:43:59] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:43:59] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:44:00] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:44:00] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:44:10] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:44:13] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:44:21] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:44:26] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:44:30] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:44:39] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:44:39] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:44:40] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:44:40] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:44:46] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:45:34] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:46:20] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:46:21] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:46:21] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:46:21] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:46:23] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:46:27] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:46:34] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:47:12] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
+[2026-04-07 15:47:17] [[32minfo[39m] : MongoDB Connected: ac-fjbjfim-shard-00-01.mbhxk7n.mongodb.net | meta: {"service":"minest-api"}
