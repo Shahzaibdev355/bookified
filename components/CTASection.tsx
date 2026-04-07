@@ -1,8 +1,16 @@
 'use client'
 
+import Link from "next/link";
 import ScrollReveal from "./ScrollReveal";
+import { useUser, SignInButton } from "@clerk/nextjs";
 
 const CTASection = () => {
+
+
+    const { isSignedIn } = useUser()
+
+
+
     return (
         <section id="cta" className="py-24 bg-paper-texture relative">
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gold/5 to-transparent pointer-events-none" />
@@ -17,12 +25,28 @@ const CTASection = () => {
                     <p className="text-muted-foreground text-lg mb-8 max-w-lg mx-auto">
                         Join thousands of readers who have transformed how they engage with books.
                     </p>
-                    <a
-                        href="#"
-                        className="inline-block bg-primary text-primary-foreground px-8 py-3.5 rounded-lg font-medium text-lg hover:opacity-90 transition-opacity shadow-warm-lg"
-                    >
-                        Upload Your First Book
-                    </a>
+
+
+
+                    {isSignedIn ? (
+                        <Link
+                            href="/books/new"
+                            style={{cursor: 'pointer'}}
+                            className="inline-block bg-primary text-primary-foreground px-8 py-3.5 rounded-lg font-medium text-lg hover:opacity-90 transition-opacity shadow-warm-lg"
+                        >
+                            Upload Your First Book
+                        </Link>
+                    ) : (
+                        <SignInButton mode="modal">
+                            <button
+                             style={{cursor: 'pointer'}}
+                                className="inline-block bg-primary text-primary-foreground px-8 py-3.5 rounded-lg font-medium text-lg hover:opacity-90 transition-opacity shadow-warm-lg"
+                            >
+                                Upload Your First Book
+                            </button>
+                        </SignInButton>
+                    )}
+
                 </ScrollReveal>
             </div>
         </section>

@@ -6,6 +6,7 @@ import Link from "next/link";
 import { lazy, Suspense } from "react";
 // import heroImg from "/assets/hero-girl-reading.png";
 import ScrollReveal from "./ScrollReveal";
+import { useUser, SignInButton } from "@clerk/nextjs";
 
 
 const steps = [
@@ -30,6 +31,9 @@ const FloatingParticles = lazy(() => import("./FloatingParticles"));
 
 
 const HeroSection = () => {
+
+  const { isSignedIn } = useUser();
+
   return (
 
     <>
@@ -54,38 +58,55 @@ const HeroSection = () => {
                 A new way to read, learn, and explore knowledge.
               </p>
               <div className="flex flex-wrap gap-4 pt-2">
+
+
+                
+
+                {isSignedIn ? (
+                  <Link
+                    href="/books/new"
+                    className="bg-primary text-primary-foreground px-7 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity shadow-warm"
+                  >
+                    Start Your Library
+                  </Link>
+                ) : (
+                  <SignInButton mode="modal">
+                    <button
+                      className="bg-primary text-primary-foreground px-7 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity shadow-warm"
+                    >
+                      Start Your Library
+                    </button>
+                  </SignInButton>
+                )}
+
+
+
                 <Link
-                  href="/books/new"
-                  className="bg-primary text-primary-foreground px-7 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity shadow-warm"
-                >
-                  Start Your Library
-                </Link>
-                <a
                   href="#how-it-works"
                   className="border border-border text-foreground px-7 py-3 rounded-lg font-medium hover:bg-secondary transition-colors"
                 >
                   See How It Works
-                </a>
+                </Link>
               </div>
             </div>
           </ScrollReveal>
 
           <ScrollReveal delay={0.2}>
             <div className="flex justify-center">
-            <Image 
-            src="/assets/hero-girl-reading.png" 
-            alt="Open book with golden light, globe, and oil lamp — scholarly illustration" 
-            width={800} 
-            height={800} 
-            className="w-full max-w-md animate-float"/>
-             
+              <Image
+                src="/assets/hero-girl-reading.png"
+                alt="Open book with golden light, globe, and oil lamp — scholarly illustration"
+                width={800}
+                height={800}
+                className="w-full max-w-md animate-float" />
+
             </div>
           </ScrollReveal>
         </div>
       </section>
 
 
-     
+
 
     </>
 
