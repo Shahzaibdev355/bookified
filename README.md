@@ -1,32 +1,79 @@
-Turn Books Into Conversations — Upload any book and engage in intelligent AI dialogues about its content.
 
-![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript) ![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=nextjs) ![MongoDB](https://img.shields.io/badge/MongoDB-9-green?logo=mongodb) ![Vapi AI](https://img.shields.io/badge/Vapi%20AI-Voice-purple) ![Clerk Auth](https://img.shields.io/badge/Clerk-Auth-cyan)
+<div align="center">
 
-🚀 Live Demo • 🐛 Report Issue • ⭐ Request Feature
+<br/>
+ <a href="https://bookified-sigma-flame.vercel.app/" target="_blank">
+<img width="1430" height="649" alt="image" src="https://github.com/user-attachments/assets/2bad93b4-46d1-4dc0-8853-2c6da5503ac2" />
+ </a>
+<br/>
+
+<h2 align="center">📚 Bookified</h2>
+
+<h4> AI Book Companion | Vapi, ElevenLabs,  Upload any book and engage in intelligent AI dialogues about its content. </h4>
+
+<br/>
+
+<div>
+<img src="https://img.shields.io/badge/-Next.js_16-000000?style=for-the-badge&logo=Next.js&logoColor=white" />
+<img src="https://img.shields.io/badge/-ElevenLabs-FFFFFF?style=for-the-badge&logo=ElevenLabs&logoColor=black" />
+<img src="https://img.shields.io/badge/-Vapi-62F6B5?style=for-the-badge&logo=Vapi&logoColor=black" />
+<img src="https://img.shields.io/badge/-Clerk-6C47FF?style=for-the-badge&logo=Clerk&logoColor=white" /><br/>
+<img src="https://img.shields.io/badge/-MongoDB-47A248?style=for-the-badge&logo=MongoDB&logoColor=white" />
+<img src="https://img.shields.io/badge/-Typescript-3178C6?style=for-the-badge&logo=Typescript&logoColor=white" />
+<img src="https://img.shields.io/badge/-Tailwind-06B6D4?style=for-the-badge&logo=Tailwind-CSS&logoColor=white" />
+<img src="https://img.shields.io/badge/-Shadcn/UI-000000?style=for-the-badge&logo=shadcnui&logoColor=white" />
+</div>
+
+<br/>
+
+**🌐 Live Demo:** [https://bookified-sigma-flame.vercel.app/](https://bookified-sigma-flame.vercel.app)
+
+</div>
+
+<br/>
 
 🤔 What is Bookified?
 Bookified is an AI-powered reading companion that transforms how you interact with books. Simply upload a PDF, and our intelligent AI engine reads, indexes, and deeply understands every page. Then engage in natural conversations—via text or voice—to ask questions, explore themes, and discover new insights.
 
 Whether you're a student tackling textbooks, a professional speed-learning business books, or a lifelong reader exploring literature, Bookified makes learning interactive, personalized, and fun. No more passive reading. Chat with your books.
 
-👥 Perfect for:
-📚 Students — Get instant summaries, study guides, and exam prep
-💼 Professionals — Speed-learn and extract actionable insights
-🧠 Lifelong Learners — Deep-dive into topics with AI guidance
-📖 Book Clubs — Explore themes and author intent together
-🎓 Educators — Create interactive learning experiences
-✨ Features
-🎤 Voice & Text Conversations — Talk to your books using natural language, powered by Vapi AI and ElevenLabs
-🔍 Smart Book Search — Find passages, themes, or ideas across all your uploads in seconds
-📄 PDF Parsing & Indexing — Automatic text extraction and intelligent segmentation
-💬 AI-Powered Dialogues — Context-aware responses that understand your book's nuances
-🎯 Personalized Learning — Get tailored insights and study guides based on your goals
-⚡ Instant Processing — Books analyzed in seconds, ready for conversation
-🔐 Secure Authentication — Clerk-powered sign-in with role-based access
-💳 Flexible Plans — Free, Standard, and Pro tiers with subscription limits
-🌙 Beautiful UI — Modern, distraction-free reading and conversation interface
-📱 Responsive Design — Seamless experience on desktop, tablet, and mobile
+## <a name="tech-stack">⚙️ Tech Stack</a>
+
+- **[Clerk](https://jsm.dev/books-clerk)** is a comprehensive user management and authentication platform. It provides secure, pre-built components for email and social logins, enabling seamless session management and protected routes with minimal configuration.
+
+- **[CodeRabbit](https://jsm.dev/books-coderabbit)** is an AI-powered code review platform that provides contextual, line-by-line feedback on pull requests. It automates the review process by identifying bugs, suggesting optimizations, and ensuring coding standards are met, significantly reducing the manual effort for developers and improving code quality.
+
+- **[ElevenLabs](https://elevenlabs.io/docs)** is an advanced AI audio platform providing lifelike text-to-speech. It powers the voice previews in Bookified, allowing users to hear and select from a variety of natural-sounding AI personas before starting a conversation.
+
+- **[MongoDB](https://www.mongodb.com/docs/)** is a flexible, document-based NoSQL database designed for scalability and developer ease. Combined with Mongoose, it serves as the core storage for user libraries, book metadata, and conversation transcripts.
+
+- **[Next.js](https://nextjs.org/docs)** is a powerful React framework for building full-stack web applications. It handles the core application logic, server-side rendering, and API routes, enabling a fast and responsive interface for the Bookified platform.
+
+- **[Shadcn UI](https://ui.shadcn.com/)** is a collection of re-usable, accessible components built with Tailwind CSS and Radix UI. It allows for the creation of a clean, modular, and professional-grade user interface that is easy to customize and theme.
+
+- **[TypeScript](https://www.typescriptlang.org/)** is a superset of JavaScript that adds static typing, providing better tooling, code quality, and error detection. It ensures the application remains maintainable and robust as the codebase scales.
+
+- **[Vapi](https://jsm.dev/books-vapi)** is a specialized Voice AI platform that enables real-time, low-latency conversational audio. It serves as the primary engine for Bookified, allowing users to have seamless, back-and-forth verbal interactions with their uploaded content.
+
+
+## <a name="features">🔋 Features</a>
+
+📄 **PDF Upload & Ingestion**: Seamlessly upload PDF books with automated text extraction, intelligent chunking, and high-dimensional embeddings for precise context retrieval.
+
+🎙️ **Voice-First Conversations**: Engage in natural, real-time voice dialogues with your uploaded books, allowing you to ask questions or explore complex concepts verbally via Vapi.
+
+🧠 **AI Voice Personas**: Choose from a variety of distinct AI personalities and hear instant high-fidelity previews powered by ElevenLabs to find the perfect reading companion.
+
+✨ **Smart Summaries & Insights**: Quickly extract the essence of any chapter or request deep-dive summaries, making long-form content more accessible and digestible.
+
+📝 **Session Transcripts**: Keep a complete record of every vocal interaction with auto-generated text transcripts, ensuring you never lose a key insight from your discussions.
+
+📚 **Library Management**: Effortlessly organize and search through your personal uploads or the global collection with a high-performance search interface.
+
+🔐 **Auth & Subscription**: Secure user access via email and social login, paired with a robust billing system to manage premium features and platform subscriptions.
+
 🎯 How It Works (For Everyone)
+
 Step 1: Upload Your Book
 Add any PDF or EPUB file from your library in seconds. No format conversion needed.
 
@@ -44,7 +91,7 @@ ElevenLabs for human-quality text-to-speech responses
 MongoDB Text Search + Regex Fallback for intelligent passage retrieval
 Semantic Understanding of book content through intelligent segmentation
 Subscription-Based Rate Limiting to manage processing costs fairly
-The AI doesn't just search—it comprehends. It understands context, recalls relationships between ideas, and provides thoughtful, contextual answers about your books.
+The AI doesn't just search it comprehends. It understands context, recalls relationships between ideas, and provides thoughtful, contextual answers about your books.
 
 🏗️ Architecture Overview
 Code
@@ -102,81 +149,70 @@ ElevenLabs API keys
 Vercel Blob storage (optional, or use another file storage)
 Installation
 bash
-# Clone the repo
+## Clone the repo
 git clone https://github.com/Shahzaibdev355/bookified.git
 cd bookified
 
-# Install dependencies
+## Install dependencies
 pnpm install
 
-# Set up environment variables
-cp .env.example .env.local
-# Fill in: NEXT_PUBLIC_CLERK_*, MONGODB_URI, VAPI_*, ELEVENLABS_*, BLOB_READ_WRITE_TOKEN
+**Set Up Environment Variables**
 
-# Run development server
+Create a new file named `.env` in the root of your project and add the following content:
+
+```env
+NODE_ENV='development'
+NEXT_PUBLIC_BASE_URL=
+
+# CLERK
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL=/
+NEXT_PUBLIC_CLERK_SIGN_UP_FALLBACK_REDIRECT_URL=/
+
+# VERCEL BLOB
+BLOB_READ_WRITE_TOKEN=
+
+# MONGODB
+MONGODB_URI=
+
+# VAPI
+NEXT_PUBLIC_VAPI_API_KEY=
+VAPI_SERVER_SECRET=
+
+# Google Gemini API for embeddings
+GOOGLE_GEMINI_API_KEY=
+
+# ELEVENLABS
+ELEVENLABS_API_KEY=
+```
+
+Replace the placeholder values with your real credentials. You can get these by signing up at: [**Clerk**](https://clerk.com), [**Vercel**](https://vercel.com), [**MongoDB**](https://www.mongodb.com), [**Vapi**](https://vapi.ai), [**Google AI Studio**](https://aistudio.google.com), [**ElevenLabs**](https://elevenlabs.io).
+
+## Run development server
 pnpm dev
 
-# Open http://localhost:3000
+## Open http://localhost:3000
 Build & Deploy
-bash
-# Build for production
+
+## Build for production
 pnpm build
 
 # Start production server
 pnpm start
 
-# Deploy to Vercel
-vercel deploy
-📦 Tech Stack
-Layer	Technologies
-Frontend	Next.js 16, React 19, TypeScript, Tailwind CSS, Framer Motion
-UI Components	shadcn/ui, Radix UI, Lucide Icons
-Forms & Validation	React Hook Form, Zod
-Backend	Next.js Server Actions, API Routes
-Database	MongoDB, Mongoose
-Auth	Clerk (OAuth, SSO, email/password)
-File Storage	Vercel Blob
-PDF Processing	pdfjs-dist
-Voice & AI	Vapi AI, ElevenLabs
-Utilities	Winston (logging), Sonner (toasts), Class Variance Authority (styling)
-💳 Subscription Tiers
-Feature	Free	Standard	Pro
-Books	1	5	Unlimited
-Voice Conversations	Limited	10 min/month	100 min/month
-Text Search	✅	✅	✅
-Book Management	✅	✅	✅
-Custom Personas	❌	✅	✅
-Priority Support	❌	❌	✅
-🔄 Project Status
-This is an active development project. Core features are working; additional enhancements are ongoing.
-
-✅ PDF upload & parsing
-✅ Book search
-✅ Voice conversations (Vapi + ElevenLabs)
-✅ User authentication (Clerk)
-✅ Subscription limits
-🚧 Custom book personas
-🚧 Export highlights & notes
-🚧 Social sharing & book clubs
 📄 License
 This project is open source under the MIT License.
 
 🤝 Contributing
 Contributions are welcome! Please open an issue or submit a pull request.
 
-bash
-# Create a feature branch
-git checkout -b feature/your-feature-name
-
-# Commit your changes
-git commit -m "Add: your feature description"
-
-# Push and open a PR
-git push origin feature/your-feature-name
-💬 Support & Feedback
-Have questions? Found a bug? Want to request a feature?
-
 📧 Email: Contact via GitHub Issues
+<br/>
 🐛 Report Issue: Open an issue
+<br/>
 ⭐ Star this repo if you find it useful!
+<br/>
 Built with ❤️ by Shahzaibdev355
