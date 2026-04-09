@@ -94,50 +94,196 @@ Subscription-Based Rate Limiting to manage processing costs fairly
 The AI doesn't just search it comprehends. It understands context, recalls relationships between ideas, and provides thoughtful, contextual answers about your books.
 
 🏗️ Architecture Overview
-Code
-┌─────────────────────────────────────────────────────────────┐
-│                    Bookified Architecture                   │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  Frontend: Next.js 16 (React 19) + TypeScript             │
-│  ├─ Components: shadcn/ui + Tailwind CSS                  │
-│  ├─ Forms: React Hook Form + Zod validation               │
-│  ├─ Voice UI: Vapi Web SDK integration                    │
-│  └─ 3D Elements: Three.js + React Three Fiber (optional)  │
-│                                                             │
-│  Backend: Next.js Server Actions + API Routes             │
-│  ├─ Authentication: Clerk (OAuth + SSO)                   │
-│  ├─ File Storage: Vercel Blob storage                     │
-│  ├─ PDF Processing: pdfjs-dist parser                     │
-│  └─ Search: MongoDB text search + regex fallback          │
-│                                                             │
-│  Database: MongoDB (Mongoose ODM)                          │
-│  ├─ Books collection                                       │
-│  ├─ Book Segments (indexed for search)                    │
-│  └─ Voice Sessions (usage tracking & billing)             │
-│                                                             │
-│  Voice & AI Services                                       │
-│  ├─ Vapi AI (conversation management)                     │
-│  └─ ElevenLabs (text-to-speech)                          │
-│                                                             │
-│  Subscription & Billing                                    │
-│  ├─ Free Plan: 1 book, limited features                  │
-│  ├─ Standard Plan: 5 books, 10 min/month voice           │
-│  └─ Pro Plan: Unlimited books, 100 min/month voice       │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-Data Flow:
+```mermaid
+classDiagram
+    direction TB
+    
+    class BookifiedApp["🎯 Bookified App"]:::appStyle {
+        -userId: string
+        -userName: string
+        +uploadBook()
+        +startVoiceConversation()
+        +getBookLibrary()
+    }
+    
+    class Book["📚 Book"]:::bookStyle {
+        -bookId: string
+        -title: string
+        -author: string
+        -filePath: string
+        -uploadDate: Date
+        -segments: Segment[]
+        +indexContent()
+        +extractMetadata()
+        +searchContent()
+    }
+    
+    class BookSegment["📄 Book Segment"]:::segmentStyle {
+        -segmentId: string
+        -bookId: string
+        -pageNumber: number
+        -textContent: string
+        -embedding: number[]
+        +getContext()
+        +matchQuery()
+    }
+    
+    class VoiceSession["🎙️ Voice Session"]:::voiceStyle {
+        -sessionId: string
+        -bookId: string
+        -userId: string
+        -startTime: Date
+        -endTime: Date
+        -transcript: string
+        -duration: number
+        +recordAudio()
+        +generateTranscript()
+        +trackUsage()
+    }
+    
+    class AIEngine["🧠 AI Engine"]:::aiStyle {
+        -vapiKey: string
+        -elevenLabsKey: string
+        -geminiKey: string
+        +processQuery(query: string)
+        +synthesizeSpeech(text: string)
+        +generateEmbedding(text: string)
+    }
+    
+    class VapiAI["🎯 Vapi AI"]:::vapiStyle {
+        -apiKey: string
+        -conversationId: string
+        +initiateConversation()
+        +processVoiceInput()
+        +generateResponse()
+    }
+    
+    class ElevenLabsAPI["🔊 ElevenLabs"]:::elevenStyle {
+        -apiKey: string
+        -voiceId: string
+        +textToSpeech(text: string)
+        +previewVoice(voiceId: string)
+        +listVoices()
+    }
+    
+    class GoogleGemini["✨ Google Gemini"]:::geminiStyle {
+        -apiKey: string
+        +generateEmbedding(text: string)
+        +semanticSearch(query: string)
+    }
+    
+    class AuthenticationService["🔐 Authentication"]:::authStyle {
+        -clerkApiKey: string
+        -userId: string
+        +signUp(email: string)
+        +signIn(email: string)
+        +socialLogin(provider: string)
+        +getCurrentUser()
+    }
+    
+    class SubscriptionManager["💳 Subscription Manager"]:::subscriptionStyle {
+        -plan: string
+        -maxBooks: number
+        -monthlyMinutes: number
+        -usedMinutes: number
+        +upgradePlan(plan: string)
+        +checkLimit()
+        +trackUsage()
+    }
+    
+    class PDFProcessor["📖 PDF Processor"]:::processorStyle {
+        -filePath: string
+        +extractText()
+        +segmentContent()
+        +parseMetadata()
+    }
+    
+    class FileStorage["☁️ File Storage"]:::storageStyle {
+        -blobToken: string
+        +uploadFile(file: File)
+        +downloadFile(fileId: string)
+        +deleteFile(fileId: string)
+    }
+    
+    class MongoDBStore["🗄️ MongoDB"]:::databaseStyle {
+        -uri: string
+        -connection: Connection
+        +insertBook(book: Book)
+        +findBookById(bookId: string)
+        +textSearch(query: string)
+        +updateSegments()
+    }
+    
+    class Frontend["🖼️ Frontend Layer"]:::frontendStyle {
+        -components: Component[]
+        -pages: Page[]
+        +renderUI()
+        +handleUserInput()
+        +displayResults()
+    }
+    
+    class ShadcnUI["🎨 Shadcn UI Components"]:::uiStyle {
+        -buttons: Button[]
+        -forms: Form[]
+        -dialogs: Dialog[]
+        +renderComponent()
+    }
+    
+    BookifiedApp --> Book : manages
+    BookifiedApp --> VoiceSession : creates
+    BookifiedApp --> AuthenticationService : uses
+    
+    Book --> BookSegment : contains
+    Book --> PDFProcessor : uses
+    Book --> FileStorage : stores
+    
+    VoiceSession --> AIEngine : communicates
+    VoiceSession --> MongoDBStore : logs to
+    
+    AIEngine --> VapiAI : delegates to
+    AIEngine --> ElevenLabsAPI : calls
+    AIEngine --> GoogleGemini : calls
+    
+    BookSegment --> GoogleGemini : generates embeddings
+    BookSegment --> MongoDBStore : indexed in
+    
+    SubscriptionManager --> VoiceSession : limits
+    SubscriptionManager --> Book : limits
+    
+    AuthenticationService --> MongoDBStore : validates against
+    
+    Frontend --> ShadcnUI : uses
+    Frontend --> BookifiedApp : interacts with
+    
+    FileStorage --> PDFProcessor : provides files to
+    MongoDBStore --> Book : persists
+    MongoDBStore --> BookSegment : stores
+    
+    classDef appStyle fill:#FF6B6B,stroke:#C92A2A,color:#fff,stroke-width:3px
+    classDef bookStyle fill:#4ECDC4,stroke:#0FA3B1,color:#fff,stroke-width:2px
+    classDef segmentStyle fill:#95E1D3,stroke:#38A169,color:#000,stroke-width:2px
+    classDef voiceStyle fill:#FFE66D,stroke:#F9A825,color:#000,stroke-width:2px
+    classDef aiStyle fill:#A8E6CF,stroke:#56AB91,color:#000,stroke-width:2px
+    classDef vapiStyle fill:#62F6B5,stroke:#00B894,color:#000,stroke-width:2px
+    classDef elevenStyle fill:#FF8FB1,stroke:#D93A5D,color:#fff,stroke-width:2px
+    classDef geminiStyle fill:#C5A3FF,stroke:#8B5CF6,color:#fff,stroke-width:2px
+    classDef authStyle fill:#6C47FF,stroke:#5433FF,color:#fff,stroke-width:2px
+    classDef subscriptionStyle fill:#FF6B9D,stroke:#C2185B,color:#fff,stroke-width:2px
+    classDef processorStyle fill:#FFA07A,stroke:#FF6347,color:#fff,stroke-width:2px
+    classDef storageStyle fill:#87CEEB,stroke:#1E90FF,color:#fff,stroke-width:2px
+    classDef databaseStyle fill:#FFD700,stroke:#FFA500,color:#000,stroke-width:3px
+    classDef frontendStyle fill:#98D8C8,stroke:#6C5B7B,color:#fff,stroke-width:2px
+    classDef uiStyle fill:#F7DC6F,stroke:#D4A017,color:#000,stroke-width:2px
 
-User uploads PDF → Vercel Blob stores file
-Backend parses PDF → Extracts text segments
-Segments stored in MongoDB with full-text index
-User initiates voice/text conversation
-Query searched against segments (MongoDB + regex fallback)
-Relevant content sent to Vapi AI
-Vapi generates response + ElevenLabs synthesizes audio
-Usage tracked for subscription enforcement
-📸 Screenshots
-![Screenshot 1](./public/screenshot-1.png) ![Screenshot 2](./public/screenshot-2.png) ![Screenshot 3](./public/screenshot-3.png)
+```
+ 
+
+## 📸 Screenshots
+<img width="1675" height="884" alt="image" src="https://github.com/user-attachments/assets/4677f468-89a8-49aa-bed0-4245fd31b114" />
+<br/>
+<img width="1336" height="801" alt="image" src="https://github.com/user-attachments/assets/bb3fae7e-c2a1-4f03-966f-228765606e72" />
+
+
 
 🚀 Getting Started
 Prerequisites
